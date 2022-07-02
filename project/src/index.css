@@ -1,0 +1,416 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////
+///// Navbar Section Start
+/////////////////////////////////////////////////////////////////////////////////*/
+:root {
+  --color-fav: crimson;
+}
+
+.fav-color {
+  color: var(--color-fav);
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 8px 0px;
+  position: fixed;
+  background-color: white;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+nav .brand a {
+  color: crimson;
+  text-decoration: none;
+}
+
+nav .brand a h1 {
+  margin: 0;
+}
+
+nav .menu div {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+}
+
+nav .menu div li {
+  list-style: none;
+  cursor: pointer;
+}
+
+nav .menu div li a {
+  text-decoration: none;
+  color: black;
+}
+
+nav .contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav .contact .contact-btn {
+  border: 2px solid crimson;
+  padding: 8px 15px;
+  border-radius: 20px;
+  background: crimson;
+  list-style: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-btn a {
+  text-decoration: none;
+  color: white
+}
+.contact-btn:hover a {
+  color: crimson;
+}
+nav .contact .contact-btn:hover {
+  border: 2px solid crimson;
+  background: transparent;
+  color: crimson;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////
+///// Header Section Start
+/////////////////////////////////////////////////////////////////////////////////*/
+
+header {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.header {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(45deg,
+      rgba(0, 0, 0, 0.219),
+      rgba(0, 0, 0, 0.453)),
+    url("image/coding.jpg");
+  background-attachment: fixed;
+  background-size: center center;
+}
+
+main .left-side {
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  font-size: 16px;
+}
+
+main .left-side h1 {
+  color: white;
+  font-size: 3.4rem;
+  margin-bottom: 30px;
+  text-shadow: 0px 10px 10px black;
+  letter-spacing: 1px;
+}
+
+main .left-side p {
+  font-size: 1.14rem;
+  color: #e1e1e1;
+  text-shadow: 0px 5px 15px black;
+}
+
+main .social {
+  position: absolute;
+  left: 0;
+  top: 40%;
+}
+
+main .social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: crimson;
+  text-align: center;
+}
+
+main .social-icon a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  border: 2px solid crimson;
+  padding: 5px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+main .social-icon a ion-icon {
+  color: white;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////
+///// FirstSection Section Start
+/////////////////////////////////////////////////////////////////////////////////*/
+
+.main-FirstSection {
+  width: 100%;
+  min-height: 600px;
+}
+
+.FirstSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title h1 {
+  font-size: 40px;
+  border-bottom: 6px solid var(--color-fav);
+  color: var(--color-fav);
+}
+
+.service-item {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.service-item .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 350px;
+  height: 250px;
+  padding: 15px;
+  transition: all 0.5s;
+  margin: 10px;
+}
+
+.service-item .item:hover {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.061);
+}
+
+.item ion-icon {
+  font-size: 60px;
+  color: crimson;
+}
+
+.item h2 {
+  font-size: 35px;
+  margin: 14px 0px 0px 0px;
+  color: #4e4848;
+  pointer-events: none;
+}
+
+.item p {
+  color: #a5a5a5;
+  pointer-events: none;
+}
+
+
+/*/////////////////////////////////////////////////////////////////////////////////
+///// Footer Section Start
+/////////////////////////////////////////////////////////////////////////////////*/
+
+footer {
+  width: 100%;
+  padding: 6px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a5a5a5;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////
+///// Skill Section Start
+/////////////////////////////////////////////////////////////////////////////////*/
+
+.skill {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.skill-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 90%;
+  margin-top: 100px;
+}
+
+.skill-main > h1 {
+  border-bottom: 6px solid var(--color-fav);
+  font-size: 40px;
+  margin: 10px 0;
+}
+
+.skill-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.skill-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 330px;
+  height: 330px;
+  margin: 20px;
+  background-color: #f1f1f65e;
+  border-radius: 10px;
+  padding: 10px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.2s;
+  transition: 0.3s
+}
+
+.skill-item::after {
+  content: 'Lorem ipsum dolor sit amet, consectetur adipisicing iusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #ed1439eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+  margin: 100px;
+  visibility: hidden;
+  opacity: 0;
+  color: white;
+  transition: 0.3s
+}
+.skill-item:hover::after {
+  visibility: visible;
+  opacity: 1;
+}
+.skill-item:hover {
+  box-shadow: 0px 0px 30px #e1e1e1;
+}
+.img-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+}
+.img-content img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+}
+.skill-item h1 {
+  font-size: 30px;
+}
+/*/////////////////////////////////////////////////////////////////////////////////
+///// Contact Section Start
+/////////////////////////////////////////////////////////////////////////////////*/
+
+
+.contact-section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.contact-section .contact-main {
+  width: 70%;
+  margin-top: 100px;
+}
+
+.contact-main h1 {
+  font-size: 40px;
+  margin: 15px 0;
+  border-left: 4px solid crimson;
+  padding-left: 10px;
+}
+
+.form-control {
+  display: flex;
+  justify-content: center;
+  /*align-items: center;*/
+  flex-direction: column;
+} 
+
+.form-control label {
+  margin: 10px 0px 15px 0;
+}
+
+.form-control input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: 2px solid silver;
+  border-radius: 2px;
+}
+.form-control textarea {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: 2px solid silver;
+  border-radius: 2px;
+  resize: vertical;
+}
+
+.form-control input:focus, textarea:focus {
+  border: 2px solid crimson;
+}
+
+.form-control button {
+  margin: 20px 0;
+  max-width: 100px;
+  border: 2px solid crimson;
+  background: crimson;
+  padding: 10px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  color: white
+
+}
+.form-control button:hover {
+  border: 2px solid crimson;
+  background: transparent;
+  color: crimson;
+}
